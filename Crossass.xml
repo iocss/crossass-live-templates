@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Crossass">
+  <template name="x:bem:element" value="// region $REGION_ELEMENT_SEPARATOR$$REGION_ELEMENT$&#10;@include x-bem-element('$ELEMENT$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: BEM Element" toReformat="false" toShortenFQNames="true">
+    <variable name="ELEMENT" expression="" defaultValue="&quot;element&quot;" alwaysStopAt="true" />
+    <variable name="REGION_ELEMENT_SEPARATOR" expression="" defaultValue="&quot;__&quot;" alwaysStopAt="false" />
+    <variable name="REGION_ELEMENT" expression="ELEMENT" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:extend-modifier" value="@include x-extend((&#10;  $MODULE$: (&#10;    $FUNCTION$($END$)&#10;  )&#10;));" description="Crossass: Extend Module's Modifier(s)" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="FUNCTION" expression="enum(&quot;x-modifier&quot;,&quot;x-bem-element&quot;,&quot;x-bem-modifier&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:module" value="// region $REGION_MODULE$&#10;@include x-module('$MODULE$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Module" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="EXPORTING" expression="enum(&quot;false&quot;,&quot;true&quot;)" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
+    <variable name="REGION_MODULE" expression="MODULE" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Modifier" toReformat="false" toShortenFQNames="true">
+    <variable name="MODIFIER" expression="" defaultValue="&quot;modifier&quot;" alwaysStopAt="true" />
+    <variable name="REGION_MODIFIER" expression="MODIFIER" defaultValue="" alwaysStopAt="false" />
+    <variable name="REGION_MODIFIER_SEPARATOR" expression="" defaultValue="&quot;-&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:extend" value="@include x-extend('$PLACEHOLDER$'$END$);" description="Crossass: Extend Placeholder(s)" toReformat="false" toShortenFQNames="true">
+    <variable name="PLACEHOLDER" expression="" defaultValue="&quot;placeholder&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:bem:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: BEM Modifier" toReformat="false" toShortenFQNames="true">
+    <variable name="MODIFIER" expression="" defaultValue="&quot;modifier&quot;" alwaysStopAt="true" />
+    <variable name="REGION_MODIFIER_SEPARATOR" expression="" defaultValue="&quot;--&quot;" alwaysStopAt="false" />
+    <variable name="REGION_MODIFIER" expression="MODIFIER" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:parent" value="@include x-parent();" description="Crossass: Extend parent Modifier" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:module-extend" value="// region $REGION_MODULE$ &lt; $REGION_PARENT$&#10;@include x-module-extend('$MODULE$', '$PARENT$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Extend Module" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="PARENT" expression="" defaultValue="&quot;parent&quot;" alwaysStopAt="true" />
+    <variable name="EXPORTING" expression="enum(&quot;false&quot;,&quot;true&quot;)" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
+    <variable name="REGION_MODULE" expression="MODULE" defaultValue="" alwaysStopAt="false" />
+    <variable name="REGION_PARENT" expression="PARENT" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:export" value="@include x-export('$NAME$', $NAMESPACE$);" description="Crossass: Export Module" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="NAMESPACE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:inspect" value="@include x-inspect($VARIABLE$);" description="Crossass: Inspect variable" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="&quot;$variable&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:function:root" value="x-root()" description="Crossass: Moudle root's Placeholder" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:function:module-name" value="x-module-name()" description="Crossass: Module name" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:function:module-parent" value="x-module-parent()" description="Crossass: Moudle parent's name" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
