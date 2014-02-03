@@ -96,7 +96,7 @@
     </context>
   </template>
   <template name="x:extend" value="@include x-extend('$PLACEHOLDER$'$END$);" description="Crossass: Extend Placeholder(s)" toReformat="false" toShortenFQNames="true">
-    <variable name="PLACEHOLDER" expression="" defaultValue="&quot;placeholder&quot;" alwaysStopAt="true" />
+    <variable name="PLACEHOLDER" expression="" defaultValue="&quot;%placeholder&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
