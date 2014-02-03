@@ -42,6 +42,7 @@ To invoke the navigation, press `Ctrl + Alt + Period` (Linux / Windows) / `Comma
  * x:export (Export Module)
  * x:import (Import Module)
  * x:extend (Extend Placeholder(s))
+ * x:extend-module (Extend Module with Modifier(s))
  * x:extend-modifier (Extend Module's Modifier(s))
  * x:function:root (Module root's Placeholder)
  * x:function:module-name (Module name)
