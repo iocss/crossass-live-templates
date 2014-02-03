@@ -24,7 +24,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:extend-modifier" value="@include x-extend((&#10;  $MODULE$: (&#10;    $FUNCTION$($END$)&#10;  )&#10;));" description="Crossass: Extend Module's Modifier(s)" toReformat="false" toShortenFQNames="true">
+  <template name="x:extend-modifier" value="@include x-extend((&#10;  x-module('$MODULE$'): (&#10;    $FUNCTION$($END$)&#10;  )&#10;));" description="Crossass: Extend Module's Modifier(s)" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
     <variable name="FUNCTION" expression="enum(&quot;x-modifier&quot;,&quot;x-bem-element&quot;,&quot;x-bem-modifier&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
