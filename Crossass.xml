@@ -188,9 +188,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:export" value="@include x-export('$NAME$', $NAMESPACE$);" description="Crossass: Export Module" toReformat="false" toShortenFQNames="true">
+  <template name="x:export" value="@include x-export('$NAME$', $namespace: $NAMESPACE$, $alias: $ALIAS$);" description="Crossass: Export Module" toReformat="false" toShortenFQNames="true">
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
-    <variable name="NAMESPACE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <variable name="NAMESPACE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -296,8 +297,9 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:import" value="@include x-import('$NAME$');" description="Crossass: Import Module" toReformat="false" toShortenFQNames="true">
+  <template name="x:import" value="@include x-import('$NAME$', $alias: $ALIAS$);" description="Crossass: Import Module" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
