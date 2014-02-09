@@ -320,7 +320,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:extend-module" value="@include x-extend(x-module('$MODULE$'));" description="Crossass: Extend Module with Modifier(s)" toReformat="false" toShortenFQNames="true">
+  <template name="x:extend-module" value="@include x-extend(x-module('$MODULE$')$END$);" description="Crossass: Extend Module with Modifier(s)" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
