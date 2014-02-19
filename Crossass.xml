@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Crossass">
-  <template name="x:bem:element" value="// region $REGION_ELEMENT_SEPARATOR$$REGION_ELEMENT$&#10;@include x-bem-element('$ELEMENT$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: BEM Element" toReformat="false" toShortenFQNames="true">
+  <template name="x:bem:element" value="// region $REGION_ELEMENT_SEPARATOR$$REGION_ELEMENT$&#10;@include x-bem-element('$ELEMENT$') {&#10;  $SELECTION$&#10;}&#10;// endregion" description="Crossass: BEM Element" toReformat="false" toShortenFQNames="true">
     <variable name="ELEMENT" expression="" defaultValue="&quot;element&quot;" alwaysStopAt="true" />
     <variable name="REGION_ELEMENT_SEPARATOR" expression="" defaultValue="&quot;__&quot;" alwaysStopAt="false" />
     <variable name="REGION_ELEMENT" expression="ELEMENT" defaultValue="" alwaysStopAt="false" />
@@ -71,7 +71,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Modifier" toReformat="false" toShortenFQNames="true">
+  <template name="x:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $SELECTION$&#10;}&#10;// endregion" description="Crossass: Modifier" toReformat="false" toShortenFQNames="true">
     <variable name="MODIFIER" expression="" defaultValue="&quot;modifier&quot;" alwaysStopAt="true" />
     <variable name="REGION_MODIFIER" expression="MODIFIER" defaultValue="" alwaysStopAt="false" />
     <variable name="REGION_MODIFIER_SEPARATOR" expression="" defaultValue="&quot;-&quot;" alwaysStopAt="false" />
@@ -117,7 +117,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:bem:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: BEM Modifier" toReformat="false" toShortenFQNames="true">
+  <template name="x:bem:modifier" value="// region $REGION_MODIFIER_SEPARATOR$$REGION_MODIFIER$&#10;@include x-bem-modifier('$MODIFIER$') {&#10;  $SELECTION$&#10;}&#10;// endregion" description="Crossass: BEM Modifier" toReformat="false" toShortenFQNames="true">
     <variable name="MODIFIER" expression="" defaultValue="&quot;modifier&quot;" alwaysStopAt="true" />
     <variable name="REGION_MODIFIER_SEPARATOR" expression="" defaultValue="&quot;--&quot;" alwaysStopAt="false" />
     <variable name="REGION_MODIFIER" expression="MODIFIER" defaultValue="" alwaysStopAt="false" />
