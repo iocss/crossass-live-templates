@@ -47,7 +47,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:module" value="// region $REGION_MODULE$&#10;@include x-module('$MODULE$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Module" toReformat="false" toShortenFQNames="true">
+  <template name="x:module" value="// region $REGION_MODULE$&#10;%$MODULE$ {}&#10;@include x-module('$MODULE$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Module" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
     <variable name="EXPORTING" expression="enum(&quot;false&quot;,&quot;true&quot;)" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
     <variable name="REGION_MODULE" expression="MODULE" defaultValue="" alwaysStopAt="false" />
@@ -162,7 +162,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:module-extend" value="// region $REGION_MODULE$ &lt; $REGION_PARENT$&#10;@include x-module-extend('$MODULE$', '$PARENT$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Extend Module" toReformat="false" toShortenFQNames="true">
+  <template name="x:module-extend" value="// region $REGION_MODULE$ &lt; $REGION_PARENT$&#10;%$MODULE$ {}&#10;@include x-module-extend('$MODULE$', '$PARENT$', $EXPORTING$) {&#10;  $END$&#10;}&#10;// endregion" description="Crossass: Extend Module" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
     <variable name="PARENT" expression="" defaultValue="&quot;parent&quot;" alwaysStopAt="true" />
     <variable name="EXPORTING" expression="enum(&quot;false&quot;,&quot;true&quot;)" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
