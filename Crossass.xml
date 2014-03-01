@@ -191,9 +191,9 @@
     </context>
   </template>
   <template name="x:export" value="@include x-export('$NAME$', $namespace: $NAMESPACE$, $alias: $ALIAS$);" description="Crossass: Export Module" toReformat="false" toShortenFQNames="true">
-    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
     <variable name="NAMESPACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
