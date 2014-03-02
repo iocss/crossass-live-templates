@@ -1,7 +1,7 @@
 # Crossass Live Templates
 
 The [Crossass](https://github.com/whizark/crossass) Live Templates for JetBrains IntelliJ IDEA family (PhpStorm, WebStorm etc.),
-Which also includes Live Templates for [Crossass Inspector](https://github.com/whizark/crossass-inspector) and [Crosass Configuration](https://github.com/whizark/crossass-configuration).
+which also includes Live Templates for [Crossass Inspector](https://github.com/whizark/crossass-inspector) and [Crosass Configuration](https://github.com/whizark/crossass-config).
 
 ## Installation
 
