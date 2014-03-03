@@ -376,7 +376,7 @@
       <option name="XML" value="false" />
       <option name="JSP" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
       <option name="CSS_RULESET_LIST" value="true" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
@@ -399,7 +399,7 @@
       <option name="XML" value="false" />
       <option name="JSP" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
       <option name="CSS_RULESET_LIST" value="true" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
