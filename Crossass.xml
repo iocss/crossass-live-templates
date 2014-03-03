@@ -434,5 +434,161 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="x:mem:base" value="@include x-mem-base(x-rem-calc($PX$), $context: $CONTEXT$);" description="Crossass: Define base mem value" toReformat="false" toShortenFQNames="true">
+    <variable name="PX" expression="" defaultValue="&quot;16px&quot;" alwaysStopAt="true" />
+    <variable name="CONTEXT" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:mem:function:base" value="x-mem-base($CONTEXT$)" description="Crossass: Base mem value" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTEXT" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:mem:function:base-fallback" value="x-mem-base-fallback($CONTEXT$)" description="Crossass: Base mem value for fallback" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTEXT" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:mem:function" value="x-mem($VALUE$, $context: $CONTEXT$)" description="Crossass: Mem to rem" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CONTEXT" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:mem:function:fallback" value="x-mem-fallback($VALUE$, $context: $CONTEXT$)" description="Crossass: Mem to px for fallback" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CONTEXT" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:rem:function:base" value="x-rem-base()" description="Crossass: Base rem value" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="x:rem:function:calc" value="x-rem-calc($PX$)" description="Crossass: Px to rem" toReformat="false" toShortenFQNames="true">
+    <variable name="PX" expression="" defaultValue="&quot;16&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 

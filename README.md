@@ -1,7 +1,11 @@
 # Crossass Live Templates
 
 The [Crossass](https://github.com/whizark/crossass) Live Templates for JetBrains IntelliJ IDEA family (PhpStorm, WebStorm etc.),
-which also includes Live Templates for [Crossass Inspector](https://github.com/whizark/crossass-inspector) and [Crosass Configuration](https://github.com/whizark/crossass-config).
+which also includes Live Templates for other Crossass components as below.
+
+ * [Crosass Configuration](https://github.com/whizark/crossass-config)
+ * [Crossass Inspector](https://github.com/whizark/crossass-inspector)
+ * [Crosass Mem](https://github.com/whizark/crossass-mem)
 
 ## Installation
 
@@ -53,3 +57,10 @@ To invoke the navigation, press `Ctrl + Alt + Period` (Linux / Windows) / `Comma
  * x:config:default (Define default configuration value)
  * x:config:function (Configuration value)
  * x:config:function:default (Default configuration value)
+ * x:mem:base (Define base mem value)
+ * x:mem:function (Mem to rem)
+ * x:mem:function:fallback (Mem to px for fallback)
+ * x:mem:function:base (Base mem value)
+ * x:mem:function:base-fallback (Base mem value for fallback)
+ * x:rem:function:base (Base rem value)
+ * x:rem:function:calc (Px to rem)
