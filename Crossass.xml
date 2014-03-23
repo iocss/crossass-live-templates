@@ -344,7 +344,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:config:function" value="x-config('$PATH$')" description="Crossass: Configuration value" toReformat="false" toShortenFQNames="true">
+  <template name="x:config-get" value="x-config-get('$PATH$')" description="Crossass: Get configuration value" toReformat="false" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -366,7 +366,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:config:default" value="@include x-config('$PATH$', $VALUE$, $default: true);" description="Crossass: Define default configuration value" toReformat="false" toShortenFQNames="true">
+  <template name="x:config-set:default" value="@include x-config-set('$PATH$', $VALUE$, $default: true);" description="Crossass: Set default configuration value" toReformat="false" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <context>
@@ -389,7 +389,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:config" value="@include x-config('$PATH$', $VALUE$);" description="Crossass: Define configuration value" toReformat="false" toShortenFQNames="true">
+  <template name="x:config-set" value="@include x-config-set('$PATH$', $VALUE$);" description="Crossass: Set configuration value" toReformat="false" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <context>
@@ -412,7 +412,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="x:config:function:default" value="x-config('$PATH$', null, $default: true)" description="Crossass: Default configuration value" toReformat="false" toShortenFQNames="true">
+  <template name="x:config-get:default" value="x-config-get('$PATH$', $default: true)" description="Crossass: Get default configuration value" toReformat="false" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
